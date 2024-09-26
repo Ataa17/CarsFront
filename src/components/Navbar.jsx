@@ -27,7 +27,7 @@ const Navlinks = () => {
       {
         Navitems.map((item) => {
           return (
-            <li key={item.label} className='font-montserrat sans-serif leading-normal hover:text-[#161A1D] ease-in-out cursor:pointer'>
+            <li key={item.label} className='font-montserrat sans-serif text-xl leading-normal hover:text-[#161A1D] ease-in-out cursor:pointer'>
               <Link to={item.path}>
                 {item.label}
 
@@ -51,9 +51,9 @@ const Navbar = () => {
   const toggleNav = () => setIsToggled(!isToggled);
 
   return (
-    <header className='px-4 absolute z-10 bg-white pr-4'>
-      <nav className='flex flex-row justify-between'>
-        <div className='flex justify-center items-center mx-4 p-4'>
+    <header className='w-full px-4 py-2 absolute z-10 bg-white pr-4'>
+      <nav className='flex flex-row justify-between items-center'>
+        <div className='flex justify-center items-center p-4'>
           <Link to='/'>
             <img src={logo} alt="logo" width={64} height={64} />
 
@@ -64,7 +64,7 @@ const Navbar = () => {
           <Navlinks />
         </div>
         {/* Mobile Navigation Toggle Button */}
-        <div className='md:hidden flex justify-center items-center ml-4 pl-4'>
+        <div className='md:hidden flex justify-center items-center mr-4 pr-8'>
           <button
             type='button'
             onClick={toggleNav}
