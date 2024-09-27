@@ -16,14 +16,14 @@ export default {
   },plugins: [
     require('daisyui'),
   ],
-  darkMode: false, // Ensure dark mode is entirely disabled
+  darkMode: false, 
   daisyui: {
     themes: [
       {
         light: {
-          primary: "#161A1D", // Your custom primary color
+          primary: "#161A1D", 
           secondary: "#660708",
-          accent: "#F43F5E",
+          accent: "#BA181B",
           neutral: "#3D4451",
           "base-100": "#FFFFFF",
           info: "#3ABFF8",
